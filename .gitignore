@@ -1,5 +1,3 @@
-conf
-conf/**
-riverview-puppet
-riverview-puppet/**
 docker-compose.yml
+data
+data/**
