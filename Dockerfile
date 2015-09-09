@@ -12,4 +12,5 @@ ADD puppetserver.conf /etc/supervisor/conf.d/puppetserver.conf
 ENV PUPPETSERVER_JAVA_ARGS="-Xms768m -Xmx768m"
 VOLUME /data
 EXPOSE 8140
-ENTRYPOINT /usr/bin/start.sh
+CMD /usr/bin/start.sh
+RUN ln -s /etc/puppetlabs/puppetserver /etc/puppetserver
